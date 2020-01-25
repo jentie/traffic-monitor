@@ -54,5 +54,5 @@ capture addresses and lookup host names
 
 pictures | [short video](/media/cloud-video.mp4)
 ---------|---------
-![device](/media/cloud.jpg) Traffic Monitor Device | ![WLAN connect](/master/media/cloud-1STA.jpg) WLAN client connected
+![device](/media/cloud.jpg) Traffic Monitor Device | ![WLAN connect](/media/cloud-1STA.jpg) WLAN client connected
 ![traffic](/media/cloud-active.jpg) Traffic Flows | ![back](/media/cloud-back.jpg) Back with Wemos D1 mini
