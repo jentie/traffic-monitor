@@ -1,5 +1,7 @@
 # traffic-monitor
 
+![cloud caseing](https://github.com/jentie/traffic-monitor/blob/master/media/cloud-active.jpg)
+
 ## WLAN man-in-the-middle traffic monitor
 
 This monitor device captures traffic from a WLAN user, based on an ESP8266 NAT Router. Most important traffic flows are assigned to LED indicators to demonstrate current smartphone activities. 
@@ -41,3 +43,9 @@ capture addresses and lookup host names
 > bash> more addresses.txt | sort -n | uniq > add.sort.txt
 
 > bash> more add.sort.txt
+
+
+pictures | video: 
+---------|---------
+![device](https://github.com/jentie/traffic-monitor/blob/master/media/cloud.jpg) Traffic Monitor Device | ![WLAN connect](https://github.com/jentie/traffic-monitor/blob/master/media/cloud-1STA.jpg) WLAN client connected
+![traffic](https://github.com/jentie/traffic-monitor/blob/master/media/cloud-active.jpg) Traffic Flows | ![back](https://github.com/jentie/traffic-monitor/blob/master/media/cloud-back.jpg) Back with Wemos D1 mini
