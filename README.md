@@ -19,9 +19,10 @@ Current proof-of-concept with 5 LED shows traffic flows to Akamai, Amazon, Faceb
 * WLAN SSID and password are known to a smartphone user
 * the build-in LED indicates one and only one user in the WLAN
 
-* different modi
-- stand-alone device: device is powered via USB
-- capturing/evaluating packet information: device is connected to PC
+* different modi:
+  - stand-alone device: device is powered via USB
+  - capturing/evaluating packet information: device is connected to PC
+  - (sending flags from PC to control traffic monitor output format)
 
 set serial data rate, disable flow control
 
