@@ -6,9 +6,7 @@
 # 2020-01-24, jens
 #
 
-
 import sys, socket
-
 
 for line in sys.stdin:
 #   print(line)
