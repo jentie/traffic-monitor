@@ -1,4 +1,4 @@
-# traffic-monitor
+# Traffic Monitor
 
 ![cloud caseing](https://github.com/jentie/traffic-monitor/blob/master/media/cloud-active.jpg)
 
