@@ -16,7 +16,7 @@ Current proof-of-concept with 5 LED shows traffic flows to Akamai, Amazon, Faceb
 
 ## Security and Data Proctection Considerations
 
-* this software / device is intended to increase the awareness of smart phone activities and usage of services via Internet
+This software / device is intended to increase the awareness of smart phone activities and usage of services via Internet. Nevertheless we need still discuss possible security and data proctection issues:
 * current implementation processes only IP addresses, one direction of traffic flow
   * just needed information is captured, separation with USB / serial interface increases transparency of process(es)
 * other output includes full IP/TCP header decoding, similar to tcpdump
