@@ -12,11 +12,13 @@ Additionally packet headers / IP addresses are send via serial interface to a ho
 The device can be used to demonstrate smartphone access to different important service providers. Each service provider (or group) is represented by one LED, which is triggered for a short period of time. 
 The user needs to connect via the WLAN of the device to the Internet. Subsequently the traffic from the smartphone toward the Internet will be evaluated. A small ad hoc evaluation can already be done on the device and drive the LED. More sophisticated evaluations can be done on a PC, using packet information received via serial interface. 
 
-Current proof-of-concept with 5 LED shows traffic flows to Akamai, Amazon, Facebook, Google and all other flows on the last LED. 
+Current proof-of-concept with 5 LED shows traffic flows to Akamai, Amazon, Facebook, Google and all other flows on the last LED.
+
+We can observe some difference between traffic from Apps and Web Browsing, some web pages are highly linked to serveral servers (tracking, advertisment). Apps / web pages from public broadcasters / public government use typically only small number of additional service providers.
 
 ## Security and Data Proctection Considerations
 
-This software / device is intended to increase the awareness of smart phone activities and usage of services via Internet. Nevertheless we need still discuss possible security and data proctection issues:
+This software / device is intended to increase the awareness of smart phone activities, usage of services via Internet or Internet tracking (based on smart phone itself, apps and/or mobile web browsing). Nevertheless we need still discuss possible security and data proctection issues:
 * current implementation processes only IP addresses, one direction of traffic flow
   * just needed information is captured, separation with USB / serial interface increases transparency of process(es)
 * other output includes full IP/TCP header decoding, similar to tcpdump
