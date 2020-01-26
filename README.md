@@ -14,6 +14,14 @@ The user needs to connect via the WLAN of the device to the Internet. Subsequent
 
 Current proof-of-concept with 5 LED shows traffic flows to Akamai, Amazon, Facebook, Google and all other flows on the last LED. 
 
+## Security and Data Proctection Considerations
+
+* this software / device is intended to increase the awareness of smart phone activities and usage of services via Internet
+* current implementation processes only IP addresses, one direction of traffic flow
+  * just needed information is captured, separation with USB / serial interface increases transparency of process(es)
+* other output includes full IP/TCP header decoding, similar to tcpdump
+* traffic monitoring can reveal user data in packets, typically most traffic is already encrypted (e.g. using https on port 443)
+
 ## Usage
 
 * WLAN SSID and password are known to a smartphone user
