@@ -2,7 +2,7 @@
 
 ![cloud caseing](https://github.com/jentie/traffic-monitor/blob/master/media/cloud-active.jpg)
 
-## WLAN man-in-the-middle traffic monitor
+## WLAN man-in-the-middle Traffic Monitor
 
 This monitor device captures traffic from a WLAN user, based on an ESP8266 NAT Router. Most important traffic flows are assigned to LED indicators to demonstrate current smartphone activities. 
 Additionally packet headers / IP addresses are send via serial interface to a host/PC for further evaluation (e.g. decoding server names) or storage.
@@ -38,6 +38,16 @@ capture addresses and lookup host names
 
 > bash> cat /dev/ttyS5 | ./gethostbyaddr.py
 
+
+### current limitations and future ideas
+
+* on-device evaluation (running on EPS8266) is currently quite simple, just evaluation of first byte of Internet address. Possibly this assignment to service providers (akamai, amazon, facebook, google) is only valid for Berlin. 
+  * larger look-up tables are restricted by memory, esp. because there are NAT tables needed
+  * initialization of functions will fail, see debug outputs on serial monitor
+* maybe an algorithm can use a hash function, at least a table with 1024 entries will work
+* 'gethostbyaddr' will quite often fail (e.g. for twitter), maybe a table can be constructed on other IP address information, e.g. from routing information (table needs to be created offline, possibly from LIR data bases or service like https://ipinfo.io/AS13414)
+* traffic evaluation on host PC might be much more complex, e.g. visualize geographic distribution of servers, based on a world map
+
 ### notes about unix command line filtering
 * PC with Windows10 can easily use Ubuntu subsystem to use command line filters
 * cut only selected column of dumped output (original traffic decoder, code currently disabled)
@@ -53,7 +63,7 @@ capture addresses and lookup host names
 > bash> more add.sort.txt
 
 
-pictures | [short video](/media/cloud-video.mp4)
----------|---------
+   pictures                                        |    :film_strip:[short video](/media/cloud-video.mp4)
+---------------------------------------------------|------------------------------------------------------------
 ![device](/media/cloud.jpg) Traffic Monitor Device | ![WLAN connect](/media/cloud-1STA.jpg) WLAN client connected
-![traffic](/media/cloud-active.jpg) Traffic Flows | ![back](/media/cloud-back.jpg) Back with Wemos D1 mini
+![traffic](/media/cloud-active.jpg) Traffic Flows  | ![back](/media/cloud-back.jpg) Back with Wemos D1 mini
