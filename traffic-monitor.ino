@@ -21,19 +21,26 @@
 //
 
 
-// #if LWIP_FEATURES && !LWIP_IPV6        needed configuration
-
-
-// include your local secrets ...
-#include "credentials.h"
-
-// ... or here
-// wifi credentials, upstream (existing WLAN, role: STA) and downstream (new access point, role: AP)
-//const char* up_wlan_ssid = "WLAN-NAME";
-//const char* up_wlan_pass = "WLAN-PASSWORD";
-//const char* down_wlan_ssid = "WLAN-NAME";
-//const char* down_wlan_pass = "WLAN-PASSWORD";
 //
+// enter your specific info here (uncomment section)
+//
+//#define UP_WLAN_SSID "WLAN-NAME"
+//#define UP_WLAN_PASS "WLAN-PASSWORD"
+//#define DOWN_WLAN_SSID "WLAN-NAME"
+//#define DOWN_WLAN_PASS "WLAN-PASSWORD"
+
+// if not defined, read from file
+//
+#ifndef WLAN_SSID
+#include "credentials.h"
+#endif
+
+
+// wifi credentials, upstream (existing WLAN, role: STA) and downstream (new access point, role: AP)
+const char* up_wlan_ssid = UP_WLAN_SSID;
+const char* up_wlan_pass = UP_WLAN_PASS;
+const char* down_wlan_ssid = DOWN_WLAN_SSID;
+const char* down_wlan_pass = DOWN_WLAN_PASS;
 
 
 #include <ESP8266WiFi.h>
