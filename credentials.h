@@ -4,6 +4,7 @@
 //   version 2020-01-27  
 //
 
+SECRET
 
 // wifi credentials, upstream (existing WLAN) and downstream (new access point)
 #define UP_WLAN_SSID "WLAN-NAME"
