@@ -1,0 +1,5 @@
+#
+# ignore file with possibly sensitive information
+#
+credentials.h
+
