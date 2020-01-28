@@ -15,6 +15,7 @@
 //   tested with Lolin/Wemos D1 mini
 //
 //   usage: e.g. on win10 ubuntu shell (disabale flow controls)
+//   bash> stty -F /dev/ttyS5 115200 
 //   bash> stty -F /dev/ttyS5  -crtscts -ixon
 //   bash> cat /dev/ttyS5 | tee sample.txt
 //   bash> cat /dev/ttyS5 | ./gethostbyaddr.py
